@@ -1,4 +1,4 @@
 # Dependencies
-ripgrep
-fzf
-fd
+- ripgrep
+- fzf
+- fd
