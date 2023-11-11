@@ -14,14 +14,6 @@ return require('packer').startup(function(use)
     }
 
     use({
-        'rose-pine/neovim',
-        as = 'rose-pine',
-        config = function()
-            vim.cmd('colorscheme rose-pine')
-        end
-    })
-
-    use({
         "folke/trouble.nvim",
         config = function()
             require("trouble").setup {
@@ -43,7 +35,14 @@ return require('packer').startup(function(use)
     use("theprimeagen/harpoon")
     use("theprimeagen/refactoring.nvim")
     use("mbbill/undotree")
-    use("tpope/vim-fugitive")
+
+    use({
+        "kdheepak/lazygit.nvim",
+        -- optional for floating window border decoration
+        requires = {
+            "nvim-lua/plenary.nvim",
+        },
+    })
     -- sticky function definitions
     use("nvim-treesitter/nvim-treesitter-context");
 
@@ -73,7 +72,6 @@ return require('packer').startup(function(use)
     use("folke/zen-mode.nvim")
     use("github/copilot.vim")
     use("eandrju/cellular-automaton.nvim")
-    use("laytan/cloak.nvim")
     use("folke/tokyonight.nvim")
 
     use({
@@ -85,6 +83,7 @@ return require('packer').startup(function(use)
             })
         end
     })
+
     use {
         'numToStr/Comment.nvim',
         config = function()

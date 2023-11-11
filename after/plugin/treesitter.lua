@@ -2,7 +2,7 @@ vim.filetype.add({ extension = { wgsl = "wgsl" } })
 
 require 'nvim-treesitter.configs'.setup {
     -- A list of parser names, or "all"
-    ensure_installed = { "vimdoc", "javascript", "typescript", "c", "lua", "rust", "wgsl" },
+    ensure_installed = { "vimdoc", "python", "javascript", "typescript", "c", "lua", "rust", "wgsl" },
 
     -- Install parsers synchronously (only applied to `ensure_installed`)
     sync_install = false,
