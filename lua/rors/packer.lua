@@ -74,6 +74,16 @@ return require('packer').startup(function(use)
     use("eandrju/cellular-automaton.nvim")
     use("folke/tokyonight.nvim")
 
+    use {
+        "folke/which-key.nvim",
+        config = function()
+            vim.o.timeout = true
+            vim.o.timeoutlen = 300
+            require("which-key").setup {
+            }
+        end
+    }
+
     use({
         "kylechui/nvim-surround",
         tag = "*", -- Use for stability; omit to use `main` branch for the latest features

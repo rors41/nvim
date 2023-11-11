@@ -1,12 +1,12 @@
 vim.keymap.set("n", "<leader>xx", "<cmd>TroubleToggle<cr>",
-    { silent = true, noremap = true }
+    { desc="Trouble toggle", silent = true, noremap = true }
 )
 vim.keymap.set("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>",
-    { silent = true, noremap = true }
+    { desc="Trouble toggle quickfix", silent = true, noremap = true }
 )
 vim.keymap.set("n", "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>",
-    { silent = true, noremap = true }
+    { desc="Trouble toggle document", silent = true, noremap = true }
 )
 vim.keymap.set("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>",
-    { silent = true, noremap = true }
+    { desc="Trouble toggle workspace", silent = true, noremap = true }
 )
