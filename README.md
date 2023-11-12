@@ -2,3 +2,5 @@
 - ripgrep
 - fzf
 - fd
+- tmux
+- lazygit
