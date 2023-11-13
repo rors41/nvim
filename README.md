@@ -1,5 +1,5 @@
 # Dependencies
-- [packer](https://github.com/wbthomason/packer.nvim])
+- [packer](https://github.com/wbthomason/packer.nvim)
 - ripgrep
 - fzf
 - fd
