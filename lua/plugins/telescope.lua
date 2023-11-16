@@ -1,10 +1,10 @@
 return {
     "folke/zen-mode.nvim",
-    -- "eandrju/cellular-automaton.nvim",
-        {
-        'nvim-telescope/telescope.nvim', branch = '0.1.x',
+    {
+        'nvim-telescope/telescope.nvim',
+        branch = '0.1.x',
         dependencies = { { 'nvim-lua/plenary.nvim' } },
-        config = function ()
+        config = function()
             local builtin = require('telescope.builtin')
             vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = "Find files" })
             vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = "Live grep" })
@@ -20,7 +20,7 @@ return {
             -- vim.keymap.set('n', '<leader>gs', builtin.git_status, {desc = "Git status"})
             -- vim.keymap.set('n', '<leader>ggs', builtin.git_stash, {})
 
-            vim.keymap.set('n', '<leader>ftb', builtin.builtin, {desc = "Telescope builtin menu" })
+            vim.keymap.set('n', '<leader>ftb', builtin.builtin, { desc = "Telescope builtin menu" })
         end,
     },
 }

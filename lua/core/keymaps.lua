@@ -1,5 +1,5 @@
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = "Open netrw" })
-vim.keymap.set("n", "<leader>L", "<cmd>Lazy<cr>", {desc= "Show Lazy menu"})
+vim.keymap.set("n", "<leader>L", "<cmd>Lazy<cr>", { desc = "Show Lazy menu" })
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move line down" })
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line up" })
@@ -31,4 +31,3 @@ vim.keymap.set("n", "<leader>rc", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left>
 vim.keymap.set("n", "<leader>cx", "<cmd>!chmod +x %<CR>", { desc = "Make file executable", silent = true })
 
 vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>", { desc = "Meme" });
-
