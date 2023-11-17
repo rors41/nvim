@@ -1,5 +1,5 @@
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = "Open netrw" })
-vim.keymap.set("n", "<leader>L", "<cmd>Lazy<cr>", { desc = "Show Lazy menu" })
+vim.keymap.set("n", "<leader>L", "<cmd>Lazy<CR>", { desc = "Show Lazy menu" })
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move line down" })
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line up" })
@@ -18,7 +18,7 @@ vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "Copy line into clipboard" })
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]], { desc = "Delete without overwriting buffer" })
 
 vim.keymap.set("n", "Q", "<nop>")
--- vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+vim.keymap.set("n", "<leader>fp", "<cmd>!tmux neww tmux-windowizer<CR><CR>")
 vim.keymap.set("n", "<leader>F", vim.lsp.buf.format, { desc = "Format file" })
 
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
