@@ -39,4 +39,9 @@ return {
             require('Comment').setup()
         end
     },
+
+    {
+        'stevearc/dressing.nvim',
+        opts = {},
+    }
 }
