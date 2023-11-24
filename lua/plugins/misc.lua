@@ -2,7 +2,16 @@ return {
 
     "nvim-treesitter/playground",
 
+    "nvim-treesitter/nvim-treesitter-context",
+
     "eandrju/cellular-automaton.nvim",
+
+    {
+        "nvim-lualine/lualine.nvim",
+        config = function()
+            require("lualine").setup({})
+        end
+    },
 
     -- "theprimeagen/refactoring.nvim",
 

@@ -15,16 +15,16 @@ vim.keymap.set("x", "<leader>p", [["_dP]], { desc = "Paste without overwriting b
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]], { desc = "Copy into clipboard" })
 vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "Copy line into clipboard" })
 
-vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]], { desc = "Delete without overwriting buffer" })
+vim.keymap.set({ "n", "v" }, "<leader>D", [["_d]], { desc = "Delete without overwriting buffer" })
 
 vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<leader>fp", "<cmd>!tmux neww tmux-windowizer<CR><CR>")
 vim.keymap.set("n", "<leader>F", vim.lsp.buf.format, { desc = "Format file" })
 
-vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
-vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
-vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
-vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
+-- vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
+-- vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
+-- vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
+-- vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("n", "<leader>rc", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
     { desc = "Sed replace word under cursor" })
