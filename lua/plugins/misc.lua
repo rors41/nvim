@@ -6,14 +6,23 @@ return {
 
     "eandrju/cellular-automaton.nvim",
 
+    -- "theprimeagen/refactoring.nvim",
+    --
+    {
+        "theHamsta/nvim-dap-virtual-text",
+        event = "VeryLazy",
+        config = function()
+            require("nvim-dap-virtual-text").setup({})
+        end
+
+    },
+
     {
         "nvim-lualine/lualine.nvim",
         config = function()
             require("lualine").setup({})
         end
     },
-
-    -- "theprimeagen/refactoring.nvim",
 
     {
         "folke/which-key.nvim",

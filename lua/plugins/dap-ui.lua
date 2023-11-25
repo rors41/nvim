@@ -6,9 +6,8 @@ return {
         config = function()
             local dap, dapui = require("dap"), require("dapui");
 
-            dap.listeners.after.event_initialized["dapui_config"] = function()
-                dapui.open()
-            end
+            vim.keymap.set("n", "<leader>dU", dapui.open, { desc = "Open DAP UI" });
+            vim.keymap.set("n", "<leader>dQ", dapui.close, { desc = "Close DAP UI" });
 
             dap.listeners.after.event_terminated["dapui_config"] = function()
                 dapui.close()
@@ -18,9 +17,6 @@ return {
                 dapui.close()
             end
 
-            vim.keymap.set("n", "<leader>dt", ":DapToggleBreakpoint<CR>", { desc = "Toggle Breakpoint" });
-            vim.keymap.set("n", "<leader>dx", ":DapTerminate<CR>", { desc = "DAP Terminate" });
-            vim.keymap.set("n", "<leader>do", ":DapStepOver<CR>", { desc = "Step Over" });
             dapui.setup()
         end
     }
