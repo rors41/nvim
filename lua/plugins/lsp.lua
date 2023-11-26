@@ -83,6 +83,13 @@ return {
 
             lsp.setup()
 
+
+            vim.keymap.set("n", "<leader>vt",
+                function()
+                    vim.diagnostic.config({ virtual_text = not vim.diagnostic.config().virtual_text })
+                end,
+                { desc = "Toggle diagnostic virual text" })
+
             vim.diagnostic.config({
                 virtual_text = true
             })
