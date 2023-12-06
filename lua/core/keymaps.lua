@@ -11,6 +11,7 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 vim.keymap.set("x", "<leader>p", [["_dP]], { desc = "Paste without overwriting buffer" })
+vim.keymap.set({ "n", "v" }, "<leader>P", [["+p]], { desc = "Paste from clipboard" })
 
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]], { desc = "Copy into clipboard" })
 vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "Copy line into clipboard" })
