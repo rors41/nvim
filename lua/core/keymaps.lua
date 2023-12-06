@@ -22,8 +22,8 @@ vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<leader>fp", "<cmd>!tmux neww tmux-windowizer<CR><CR>")
 vim.keymap.set("n", "<leader>F", vim.lsp.buf.format, { desc = "Format file" })
 
--- vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
--- vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
+vim.keymap.set("n", "gk", "<cmd>cnext<CR>zz", { desc = "Quickfix list next" })
+vim.keymap.set("n", "gj", "<cmd>cprev<CR>zz", { desc = "Quickfix list previous" })
 -- vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 -- vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
