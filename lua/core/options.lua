@@ -28,4 +28,7 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
-vim.cmd.colorscheme("tokyonight")
+-- Only for material
+vim.g.material_style = "darker"
+
+vim.cmd.colorscheme("material")

@@ -34,10 +34,16 @@ return {
         end
     },
 
+    -- {
+    --     "folke/tokyonight.nvim",
+    --     lazy = true,
+    --     opts = { style = "storm" },
+    -- },
+
     {
-        "folke/tokyonight.nvim",
+        "marko-cerovac/material.nvim",
         lazy = true,
-        opts = { style = "storm" },
+        opts = {}
     },
 
     {
