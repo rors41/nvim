@@ -29,7 +29,9 @@ return {
                 'tsserver',
                 'rust_analyzer',
                 'clangd',
+                'pylsp',
             })
+
 
             -- Fix Undefined global 'vim'
             lsp.nvim_workspace()
@@ -82,7 +84,6 @@ return {
             end)
 
             lsp.setup()
-
 
             vim.keymap.set("n", "<leader>vt",
                 function()
