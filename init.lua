@@ -6,3 +6,4 @@ require("core.keymaps")
 
 -- neovim options
 require("core.options")
+
